@@ -29,3 +29,13 @@ Repeated failed login attempts from the same IP indicate brute force activity.
 
 ## Key Learning
 This investigation demonstrates detection of brute force attacks using log analysis and basic Linux commands.
+## Screenshots
+
+### Evidence 1
+![Evidence](VirtualBox_ubuntu-soc_14_02_2026_16_25_04.png)
+
+### Evidence 2
+![Evidence](VirtualBox_ubuntu-soc_14_02_2026_16_29_21.png)
+
+### Evidence 3
+![Evidence](VirtualBox_ubuntu-soc_14_02_2026_16_33_11.png)
