@@ -1,38 +1,55 @@
-# SOC Threat Detection Home Lab
+# SOC Homelab – Security Operations Practice Environment
 
-## Objective
-This repository demonstrates hands-on experience analyzing server logs and Windows security events to detect brute-force activity and authentication anomalies.
+This repository documents hands-on cybersecurity investigations performed in a controlled Ubuntu homelab environment.
 
----
-
-## Lab 1 – Apache Log Analysis
-
-**Tools Used:** Linux (Ubuntu), Apache logs  
-
-- Analyzed 5,000+ log entries  
-- Identified repeated failed login attempts  
-- Correlated suspicious IP behavior  
-- Simulated incident response workflow  
+The objective is to simulate real-world SOC (Security Operations Center) workflows including log analysis, brute-force detection, and anomaly investigation using Linux-based systems.
 
 ---
 
-## Lab 2 – Apache Log Analysis (HTTP Access Logs)
+## Lab 1 – Apache HTTP Log Investigation
 
-**Tools Used:** Linux (Ubuntu), Apache2, access.log, awk, grep, sort, uniq
+**Environment**
+- Ubuntu Linux
+- Apache2
+- /var/log/apache2/access.log
 
-- Verified Apache service status using systemctl  
-- Reviewed /var/log/apache2/access.log  
-- Identified top source IPs by request frequency  
-- Filtered suspicious login-related requests (e.g., /login)  
-- Counted repeated IP attempts to detect abnormal behavior  
+**Investigation Focus**
+- Verified Apache service health
+- Reviewed raw HTTP access logs
+- Identified top source IPs by request frequency
+- Filtered login-related activity
+- Detected suspicious repeated requests
 
-[View Full Investigation →](./apache-log-analysis)
----
-
-## Skills Demonstrated
-
-- Linux log analysis (auth.log, access.log)
-- Brute-force attack detection
-- Suspicious IP correlation
+**Skills Demonstrated**
+- Log analysis
+- Threat pattern detection
+- IP frequency correlation
 - Command-line investigation (grep, awk, sort, uniq)
-- Incident response fundamentals (containment & monitoring)
+
+---
+
+## Lab 2 – SSH Brute Force Detection
+
+**Environment**
+- Ubuntu Linux
+- OpenSSH
+- /var/log/auth.log
+
+**Investigation Focus**
+- Generated failed SSH login attempts
+- Parsed authentication logs
+- Counted repeated failures by IP
+- Identified brute-force behavior patterns
+- Documented findings
+
+**Skills Demonstrated**
+- Authentication log analysis
+- Brute-force detection
+- Incident investigation workflow
+- Linux security fundamentals
+
+---
+
+## Purpose
+
+This project demonstrates foundational SOC Analyst skills including manual log review, anomaly identification, and structured investigation documentation prior to using SIEM platforms.
