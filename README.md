@@ -16,20 +16,23 @@ This repository demonstrates hands-on experience analyzing server logs and Windo
 
 ---
 
-## Lab 2 – Windows Security Event Investigation
+## Lab 2 – Apache Log Analysis (HTTP Access Logs)
 
-**Tools Used:** Windows Event Viewer  
+**Tools Used:** Linux (Ubuntu), Apache2, access.log, awk, grep, sort, uniq
 
-- Generated 200+ failed login events (Event ID 4625)  
-- Investigated authentication anomalies  
-- Applied containment steps following the incident response lifecycle  
+- Verified Apache service status using systemctl  
+- Reviewed /var/log/apache2/access.log  
+- Identified top source IPs by request frequency  
+- Filtered suspicious login-related requests (e.g., /login)  
+- Counted repeated IP attempts to detect abnormal behavior  
 
+[View Full Investigation →](./apache-log-analysis)
 ---
 
 ## Skills Demonstrated
 
-- Log analysis  
-- Threat detection  
-- Incident response fundamentals  
-- Authentication monitoring  
-- Security event investigation
+- Linux log analysis (auth.log, access.log)
+- Brute-force attack detection
+- Suspicious IP correlation
+- Command-line investigation (grep, awk, sort, uniq)
+- Incident response fundamentals (containment & monitoring)
