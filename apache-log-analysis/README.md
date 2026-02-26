@@ -35,12 +35,15 @@ The objective was to analyze access logs to identify abnormal request patterns a
 ---
 
 ## Evidence
+### Evidence 1 – Apache Service Status
 
-### Evidence 2 – Apache Service Status
-![Evidence 1](./evidence1.png)
+![Apache Service Status](evidence1.png)
 
-### Evidence 3 – Top Source IP Requests
-![Evidence 2](./evidence2.png)
+### Evidence 2 – Top Source IP Requests
 
-### Evidence 4 – Suspicious Login Filtering
-![Evidence 3](./evidence3.png)
+![Top Source IP Requests](evidence2.png)
+
+### Evidence 3 – Suspicious Login Filtering
+
+![Suspicious Login Filtering](evidence3.png)
+
