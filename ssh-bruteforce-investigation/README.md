@@ -29,16 +29,7 @@ Repeated failed login attempts from the same IP indicate brute force activity.
 
 ## Key Learning
 This investigation demonstrates detection of brute force attacks using log analysis and basic Linux commands.
-## Evidence 1 – Failed SSH Login Attempts
-![Failed SSH Attempts](evidence1.png)
+## Evidence
 
-## Evidence 2 – Repeated Attempts from Same IP
-![Repeated Attempts](evidence2.png)
-
-## Evidence 3 – SSH Service Status (Running)
-![SSH Service Running](evidence3.png)
-
-
-
-### Evidence 3
-![Evidence](VirtualBox_ubuntu-soc_14_02_2026_16_33_11.png)
+### Evidence 1 — Brute Force Simulation
+![Brute Force Simulation](evidence1.png)
